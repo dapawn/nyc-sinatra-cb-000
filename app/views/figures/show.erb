@@ -1,10 +1,22 @@
+<h1> NYC's Finest </h1>
 <table>
+  <th>Person Name:</th>
   <tr>
-    <th>Name</th>
-    <th>Year Completed</th>
+      <td><a href="/figures/<%= @figure.id %>"><%= @figure.name %></a>
+      <ul>
+      Landmarks:
+        <%@figure.landmarks.each do |landmark|%>
+        <li><%=landmark.name%></li>
+        <%end%>
+      </ul>
+      <ul>
+      Titles:
+        <%@figure.titles.each do |title|%>
+        <li><%=title.name%></li>
+        <%end%>
+      </ul>
   </tr>
-  <tr>
-    <td><%= @landmark.name %></td>
-    <td><%= @landmark.year_completed %></td>
-  </tr>
-<table>
+      </td>
+</table>
+<br>
+<a class="button" href="/">Home</a>

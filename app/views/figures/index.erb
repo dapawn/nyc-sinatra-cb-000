@@ -1,9 +1,9 @@
 <h1>NYC Figures</h1>
   <table>
-  <th>Person Name</th>
+  <th>Person Name:</th>
   <% @figures.each do |figure| %>
   <tr>
-      <td align="center"><a href="/figures/<%= figure.id %>"><%= figure.name %></a>
+      <td><a href="/figures/<%= figure.id %>"><%= figure.name %></a>
       <ul>
         <%figure.titles.each do |title|%>
         <li><%=title.name%></li>
