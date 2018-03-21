@@ -2,7 +2,7 @@
 <table>
   <th>Person Name:</th>
   <tr>
-      <td><a href="/figures/<%= @figure.id %>"><%= @figure.name %></a>
+      <td><a href="/figures/<%= @figure.id %>/edit"><%= @figure.name %></a>
       <ul>
       Landmarks:
         <%@figure.landmarks.each do |landmark|%>
