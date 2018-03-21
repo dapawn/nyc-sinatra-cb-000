@@ -1,11 +1,11 @@
-<h1> NYC Lndmark</h1>
+<h1>Landmark Details</h1>
 <table>
   <tr>
-    <th>Name:</th>
-    <th>Year Completed:</th>
+    <th>Name</th>
+    <th>Year Completed</th>
   </tr>
   <tr>
-    <td><%= @landmark.name %></td>
+    <td><a href="/landmarks/<%= @landmark.id %>/edit"><%= @landmark.name %></a></td>
     <td><%= @landmark.year_completed %></td>
   </tr>
 <table>
